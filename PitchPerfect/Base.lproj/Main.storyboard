@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="enD-AU-T4H">
             <objects>
-                <viewController id="g19-Wm-kar" sceneMemberID="viewController">
+                <viewController id="g19-Wm-kar" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LQX-7v-lyr"/>
                         <viewControllerLayoutGuide type="bottom" id="HUe-IE-KCo"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1497" y="186"/>
         </scene>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -53,7 +53,6 @@
                                 <state key="normal" image="stopRecordingButton"/>
                                 <connections>
                                     <action selector="stopRecoding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kv0-A3-fLQ"/>
-                                    <segue destination="g19-Wm-kar" kind="show" id="5xK-lA-58J"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,6 +71,7 @@
                         <outlet property="recordButton" destination="4Hq-SV-krk" id="odj-qx-07I"/>
                         <outlet property="recordingLabel" destination="PAk-cY-B90" id="Nsf-uA-3wE"/>
                         <outlet property="stopRecodingButton" destination="SqO-vm-U9Q" id="KpU-Ow-0kX"/>
+                        <segue destination="g19-Wm-kar" kind="show" identifier="stopRecording" id="Z0G-Tp-L9y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
