@@ -29,40 +29,38 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func playSoundForButton(sender: UIButton) {
         print("Play Sound Button Pressed")
-        /*
-         switch(ButtonType(rawValue: sender.tag)!) {
-         case .Slow:
-         playSound(rate: 0.5)
-         case .Fast:
-         playSound(rate: 1.5)
-         case .Chipmunk:
-         playSound(pitch: 1000)
-         case .Vader:
-         playSound(pitch: -1000)
-         case .Echo:
-         playSound(echo: true)
-         case .Reverb:
-         playSound(reverb: true)
-         }
-         
-         configureUI(.Playing)
-         */
+        switch(ButtonType(rawValue: sender.tag)!) {
+        case .Slow:
+            playSound(rate: 0.5)
+        case .Fast:
+            playSound(rate: 1.5)
+        case .Chipmunk:
+            playSound(pitch: 1000)
+        case .Vader:
+            playSound(pitch: -1000)
+        case .Echo:
+            playSound(echo: true)
+        case .Reverb:
+            playSound(reverb: true)
+        }
+        
+        configureUI(.Playing)
     }
     
     @IBAction func stopSoundForButton(sender: UIButton) {
         print("Stop Audio Button Pressed")
-        //  stopAudio()
+        stopAudio()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
+        print("PlaySoundsViewController loaded")
+        setupAudio()
     }
 
     override func viewWillAppear(animated: Bool) {
-        print("viewWillAppear called")
+        configureUI(.NotPlaying)
     }
 
     override func didReceiveMemoryWarning() {

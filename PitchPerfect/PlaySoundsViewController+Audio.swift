@@ -6,7 +6,7 @@
 //
 import UIKit
 import AVFoundation
-/*
+
 extension PlaySoundsViewController: AVAudioPlayerDelegate {
     struct Alerts {
         static let DismissAlert = "Dismiss"
@@ -38,7 +38,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
     }
     
     func playSound(rate rate: Float? = nil, pitch: Float? = nil, echo: Bool = false, reverb: Bool = false) {
-        
+
         // initialize audio engine components
         audioEngine = AVAudioEngine()
         
@@ -94,7 +94,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
             }
             
             // schedule a stop timer for when audio finishes playing
-            self.stopTimer = NSTimer(timeInterval: delayInSeconds, target: self, selector: "stopAudio", userInfo: nil, repeats: false)
+            self.stopTimer = NSTimer(timeInterval: delayInSeconds, target: self, selector: #selector(PlaySoundsViewController.stopAudio), userInfo: nil, repeats: false)
             NSRunLoop.mainRunLoop().addTimer(self.stopTimer!, forMode: NSDefaultRunLoopMode)
         }
         
@@ -119,7 +119,6 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
     }
     
     func stopAudio() {
-        
         if let stopTimer = stopTimer {
             stopTimer.invalidate()
         }
@@ -165,11 +164,10 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         alert.addAction(UIAlertAction(title: Alerts.DismissAlert, style: .Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
-
     
 }
 
-*/
+
 
 
 
