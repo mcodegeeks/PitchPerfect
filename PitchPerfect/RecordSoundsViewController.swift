@@ -3,7 +3,7 @@
 //  PitchPerfect
 //
 //  Created by Younghwan Mun on 2016-06-21.
-//  Copyright © 2016 Younghwan Mun. All rights reserved.
+//  Copyright © 2016 MCodeGeeks. All rights reserved.
 //
 
 import UIKit
