@@ -195,7 +195,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Younghwan Mun";
+				ORGANIZATIONNAME = MCodeGeeks;
 				TargetAttributes = {
 					1233C05F1D19BD55004090DA = {
 						CreatedOnToolsVersion = 7.3.1;
